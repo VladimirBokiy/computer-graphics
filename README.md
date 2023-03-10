@@ -4,4 +4,4 @@
 [Link](https://hub.docker.com/r/vladimirbokiy/lab1/tags) 
 
 ## Commad which runs container
-  docker run -it -p 5000:80 --name color-picker vladimirbokiy/lab1
+  ```docker run -it -p 5000:80 --name color-picker vladimirbokiy/lab1```
