@@ -1,4 +1,4 @@
-# Lab 1 | Color Converter
+# Lab 2 | Image Viewer
 
 ## Image on dockerhub
 [Link](https://hub.docker.com/r/vladimirbokiy/lab2) 
