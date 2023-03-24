@@ -1,0 +1,14 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    Layout = null;
+}
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+
+<form method="post" style="padding: 20%">
+    <label asp-for="FolderPath"></label>
+    <input class="form-control" asp-for="FolderPath"/>
+</form>
+

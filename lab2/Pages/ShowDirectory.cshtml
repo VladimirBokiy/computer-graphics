@@ -1,0 +1,43 @@
+﻿@page "{path}"
+@model ShowDirectoryModel
+@{
+    ViewData["Title"] = "Show Directory";
+    Layout = null;
+}
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+
+
+
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Height</th>
+        <th scope="col">Width</th>
+        <th scope="col">Bit depth</th>
+        <th scope="col">Compression type</th>
+        <th scope="col">File name</th>
+        <th scope="col">DPI</th>
+    </tr>
+    </thead>
+    
+    <tbody>
+    @if (Model.Info != null)
+    {
+        @foreach (var i in Model.Info)
+        {
+            <tr>
+                <td>@Model.Info.IndexOf(i)</td>
+                <td>@i.Height</td>
+                <td>@i.Width</td>
+                <td>@i.BitDepth</td>
+                <td>-1</td>
+                <td>@i.FileName</td>
+                <td>@i.HorizontalResolution</td>
+            </tr>
+        }
+    }
+    </tbody>
+    
+</table>
