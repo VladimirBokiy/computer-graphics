@@ -1,0 +1,52 @@
+﻿@page "{path}"
+@model ComparisonModel
+@{
+    ViewData["Title"] = "Comparison";
+    Layout = null;
+}
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+
+<div style="display: flex; flex-wrap: wrap; align-items: center;">
+    <div class="container p-5 my-5 " style="width: 20%; height: 20%; text-align: center">
+        <h4>Оригинальное изображение</h4>
+        <div >
+            <img src="@Model.Paths.Original" style="max-width: 100%; max-height: 100%"/>
+        </div>
+    </div>
+    
+    <div class="container  p-5 my-5 " style="width: 20%; height: 20%; text-align: center">
+        <h4>Реализация сглаживающего фильтра</h4>
+        <div >
+            <img src="@Model.Paths.Blurred" style="max-width: 100%; max-height: 100%">
+        </div>
+    </div>
+    
+    
+    <div class="container p-5 my-5 " style="width: 20%; height: 20%; text-align: center">
+        <h4>Линейное контрастирование</h4>
+        <div >
+            <img src="@Model.Paths.Contrasted" style="max-width: 100%; max-height: 100%">
+        </div>
+    </div>
+    
+    <div class="container p-5 my-5 " style="width: 20%; height: 20%; text-align: center">
+        <h4> Выравнивание гистограммы для трех цветовых компонент в пространстве RGB</h4>
+        <div>
+            <img src="@Model.Paths.HistogramRGB" style="max-width: 100%; max-height: 100%">
+        </div>    
+    </div>
+    
+    <div class="container p-5 my-5 " style="width: 20%; height: 20%; text-align: center">
+        <h4>Выравнивание только компоненты яркости в пространстве HSV</h4>
+        <div >
+            <img src="@Model.Paths.HistogramHSV" style="max-width: 100%; max-height: 100%">
+        </div>    
+    </div>
+</div>
+
+
+
+
+
+

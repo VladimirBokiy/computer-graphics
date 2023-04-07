@@ -1,0 +1,21 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    Layout = null;
+}
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+
+<div style="display: flex; justify-content: center; align-items: center">
+    <form method="post">
+        <div class="form-group">
+            <label asp-for="Path"></label>
+            <input class="form-control" asp-for="Path"/>
+        </div>
+    </form>    
+</div>
+
+
+
+
